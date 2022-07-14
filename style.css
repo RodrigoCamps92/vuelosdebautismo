@@ -113,14 +113,28 @@ body{
     gap:20px 20px;}
 
 .fotoGaleria{
-    width: 60vh ;
-    height: 50vh;
+    width: 100% ;
+    height: 80vh;
+    }
+.fotoGaleria2{
+    width: 50vh;
+    height: 60%;
+
 }
 .fotoGaleria:hover{
     filter: saturate(200%);
     transition: 3s;
 }
+.carousel{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
+}
+.carousel-inner{
+   align-content: center;
+   }
 .reproductor{
     align-items: center;
     padding: 20px;
@@ -132,8 +146,7 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: row;
-    
-}
+    }
 footer div{
     display: flex;
     justify-content: space-between;
@@ -144,11 +157,6 @@ footer div{
 ul {
     display: flex;
     width: 100%;
-}
-
-.tuki:hover{
-    transform: rotate(360deg);
-    transition: 5s;
 }
 
 footer img{

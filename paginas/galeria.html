@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <title class="head">Vuelos de Bautismo</title>
 </head>
@@ -26,7 +27,34 @@
     <main>
        <Section>
         <h2>Disfruta de Mágicas Vistas</h2>
-        <div class="container">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../imagenes/lunaeinstrumentosp2008.jpg" class="d-block w-100 fotoGaleria" alt="panel de instrumentos y luna">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/ocasop2008-2.jpg" class="d-block w-100 fotoGaleria" alt="ocaso y ala del avion">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/vistahelicep2002.jpg" class="d-block w-100 fotoGaleria" alt="vista paisaje y helice">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/vistatoledop2002.jpg" class="d-block w-100 fotoGaleria" alt="vista ala y pueblo">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/vistacbap2002.jpg" class="d-block w-100 fotoGaleria" alt="vista ala y córdoba">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!-- <div class="container">
             <img src="../imagenes/lunaeinstrumentosp2008.jpg" alt="panel de intrumentos y vista de la luna" class="fotoGaleria">
         </div>
         <div class="container">
@@ -40,12 +68,11 @@
         </div>
         <div class="container">
             <img src="../imagenes/vistacbap2002.jpg" alt="vista ala y córdoba" class="fotoGaleria">
-        </div>
+        </div> -->
 
         <h2>Vení a volar con nosotros</h2>
-        <img src="../imagenes/pilotoycabinap2002.jpg" alt="piloto y cabina del avion en vuelo" class="fotoGaleria">
+        <img src="../imagenes/pilotoycabinap2002.jpg" alt="piloto y cabina del avion en vuelo" class="fotoGaleria2">
 
-        <img src="../imagenes/tuki.jpg" alt="tuki" class="tuki">
        </Section> 
 
     </main>
@@ -71,6 +98,8 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
 </body>
 </html>
