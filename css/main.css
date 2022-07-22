@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fe9393;
+  background-image: url(../imagenes/nubesfondo.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+
+ul {
+  display: flex;
+  width: 100%;
+  list-style-type: none; }
+
+.body__ul {
+  text-decoration: none; }
+  .body__ul__pagina {
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    margin: 5vh;
+    background-color: #2d048e;
+    width: fit-content;
+    height: fit-content;
+    padding: 1px; }
+    .body__ul__pagina a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700px;
+      font-size: larger;
+      border: solid 3px;
+      border-color: #fe9393;
+      border-radius: 6px;
+      padding: 2px 6px; }
+    .body__ul__pagina:hover {
+      height: 20px;
+      width: 20px;
+      transition: 3s;
+      background-color: blue;
+      transform: scale(1, 2); }
+
+header {
+  display: flex;
+  width: 100%; }
+  header ul {
+    display: flex;
+    color: #2d048e;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+    align-items: flex-end; }
+    header ul li {
+      align-items: flex-end; }
+
+.header__h1 {
+  display: flex;
+  color: #2d048e;
+  justify-content: flex-end;
+  align-items: center; }
+
+.header__form {
+  align-self: flex-start;
+  width: 100%;
+  order: 10; }
+
+.header__logo {
+  height: 20vh;
+  width: 30vh;
+  align-items: left;
+  justify-content: center;
+  opacity: inherit;
+  margin: 0 auto;
+  height: 50%; }
+
+ul {
+  display: flex;
+  width: 100%;
+  list-style-type: none; }
+
+.nav-link {
+  font-weight: 700px;
+  color: #2d048e; }
+
+.main__titulo {
+  color: #2d048e;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px; }
+
+.main__texto {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+  padding: 20px; }
+
+.fotoGaleria {
+  width: 100%;
+  height: 80vh; }
+  .fotoGaleriahover {
+    filter: saturate(200%);
+    transition: 3s; }
+
+.fotoGaleria2 {
+  width: 50vh;
+  height: 60%; }
+
+.carousel {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .carousel-inner {
+    align-content: center; }
+
+.reproductor {
+  align-items: center;
+  padding: 20px;
+  margin-left: 10em; }
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: sticky; }
+  footer div {
+    display: flex;
+    justify-content: space-between;
+    list-style: none; }
+  footer img {
+    width: 25px;
+    height: 25px; }
+
+.navbar {
+  background-color: none;
+  color: blue;
+  font-size: larger; }

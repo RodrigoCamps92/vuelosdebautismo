@@ -91,7 +91,7 @@ header ul li{
 }
 
 .main__titulo{
-    color: rgb(45, 4, 142);
+    color:  rgb(45, 4, 142);
     text-align: center;
     font-size: 30px;
     padding: 20px;
@@ -133,8 +133,7 @@ header ul li{
     align-items: center;
     padding: 20px;
     margin-left: 10em;
-    heig
-   
+      
 }
 footer{
     background-color: #f86f6f;
@@ -154,7 +153,8 @@ footer div{
 ul {
     display: flex;
     width: 100%;
-}
+    list-style-type: none;
+    }
 
 footer img{
    
