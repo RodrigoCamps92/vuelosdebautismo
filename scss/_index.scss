@@ -1,3 +1,5 @@
+@import '../scss/base/extends';
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +13,7 @@ body{
     
     }
 ul {
-        display: flex;
+        @extend %flex;
         width: 100%;
         list-style-type: none;
 }    
@@ -23,8 +25,7 @@ ul {
             color:map-get($colores, "color-terciario");
             margin: 5vh;
             background-color:map-get($colores, "color-secundario");
-            width: fit-content;
-            height: fit-content;
+            @include dimension (fit-content, fit-content);
             padding: 1px;  
             a{
                 color: white;
@@ -38,8 +39,7 @@ ul {
             }
             
                 &:hover{
-                height: 20px;
-                width: 20px;
+                @include dimension(20px, 20px);
                 transition: 3s;
                 background-color: blue;
                 transform: scale(1,2);
@@ -49,10 +49,10 @@ ul {
 
     }   
 header {
-        display: flex;
+        @extend %flex;
         width: 100%;
     ul{
-        display: flex;
+        @extend %flex;
         color:rgb(45, 4, 142) ;
         text-decoration: none;
         list-style: none;
@@ -65,7 +65,7 @@ header {
     }   
 .header{
     &__h1{
-        display: flex;
+        @extend %flex;
         color: map-get($colores, "color-secundario");
         justify-content: flex-end;
         align-items: center; 
@@ -76,8 +76,7 @@ header {
         order: 10;
     }
     &__logo{
-        height:20vh;
-        width: 30vh;
+        @include dimension(30vh,20vh);
         align-items: left;
         justify-content: center;
         opacity:inherit;
@@ -86,7 +85,7 @@ header {
     }
 }  
 ul {
-    display: flex;
+    @extend %flex;
     width: 100%;
     list-style-type: none;
     }
@@ -103,22 +102,22 @@ ul {
     }
     &__texto{
         text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: larger;
-    padding: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: larger;
+        padding: 20px;
     }
 }
 .fotoGaleria{
-    width: 100% ;
-    height: 80vh;
+    @include dimension (100%, 80vh);
+    
     &hover{
         filter: saturate(200%);
         transition: 3s;
     }
     }
 .fotoGaleria2{
-        width: 50vh;
-        height: 60%;
+    @include dimension(50vh,60% );
+
 }
 .carousel{
     width: 50%;
@@ -139,16 +138,16 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: row;
-    position:sticky;
+    position:absolute;
 
     div{
-        display: flex;
+        @extend %flex;
         justify-content: space-between;
         list-style: none 
     }
     img{
-        width: 25px;
-        height: 25px;
+        @include dimension(25px, 25px);
+       
     }
 }
 .navbar{
