@@ -110,7 +110,7 @@ ul {
 .fotoGaleria{
     @include dimension (100%, 80vh);
     
-    &hover{
+    &:hover{
         filter: saturate(200%);
         transition: 3s;
     }
