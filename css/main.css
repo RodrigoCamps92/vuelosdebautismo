@@ -150,3 +150,8 @@ footer {
   iframe {
     height: 300px;
     width: 300px; } }
+
+@media only screen and (max-width: 425px) {
+  .header__logo {
+    width: 15vh;
+    height: 10vh; } }
